@@ -28,10 +28,14 @@ $(document).ready(function () {
         var fieldTwo = $('.value-two');
         fieldTwo.text(valueTwoArc);
         var valueOneArc = $('.value-one-arc').val();
+        valueOneArc = Number(valueOneArc);
+        valueTwoArc = Number(valueTwoArc);
         var answer = valueOneArc + valueTwoArc;
         $('.value-answer').text(answer);
     });
-    
-    
+    var t = $('.arc-one').width();
+    console.log(t + 2);
+    var arcTwo = document.querySelector('.arc-two');
 
+    $(arcTwo).css('left', t + 35.2);
 });

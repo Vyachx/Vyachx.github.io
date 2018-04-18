@@ -19,7 +19,7 @@ h2 {
 }
 
 .wrap {
-    max-width: 1100px;
+    max-width: 880px;
     margin: 0 auto;
 }
 
@@ -31,9 +31,13 @@ h2 {
 .task {
     margin-top: 15px;
 }
-
+.task-desc{
+    text-align: center;
+}
 .formula {
     display: flex;
+    justify-content: center;
+    margin-top: 15px;
 }
 
 .fields {
@@ -57,7 +61,7 @@ input[type=number]::-webkit-outer-spin-button {
 .task-box {
     position: relative;
     /*    height: var(--arc-width);*/
-    height: 300px;
+    height: 250px;
     display: flex;
     width: 875px;
     flex-direction: column;
@@ -81,7 +85,6 @@ input[type=number]::-webkit-outer-spin-button {
     /*    Изменение динамически*/
     bottom: 200px;
     left: 300px;
-
 }
 
 .line-box {
@@ -93,8 +96,6 @@ input[type=number]::-webkit-outer-spin-button {
     width: 875px;
     height: 83px;
     margin: 0 auto;
-
-
 }
 
 .arc {
@@ -104,13 +105,11 @@ input[type=number]::-webkit-outer-spin-button {
     border-right: 1px solid var(--arc-color);
     z-index: 10;
     position: absolute;
-
 }
 
 .arc-one {
     --sum: 1;
     --arc-width: calc(var(--one-pt)*var(--sum));
-
     bottom: 67px;
     left: 35px;
     width: var(--arc-width);
@@ -119,12 +118,10 @@ input[type=number]::-webkit-outer-spin-button {
 
 .arc-two {
     --sum: 1;
-    
     --arc-width: calc(var(--one-pt)*var(--sum));
-
     --left-padding:35px;
     bottom: 67px;
-    left: calc(var(--left-padding));
+
     width: var(--arc-width);
     height: calc(var(--arc-width)/2);
 }
