@@ -27,21 +27,51 @@ h2 {
     text-align: center;
 
 }
+.task{
+    margin-top: 15px;
+}
+
+.formula{}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.input{
+    width: 20px;
+    margin: 0 5px;
+}
+
 .task-box{
     position: relative;
 /*    height: var(--arc-width);*/
-    height: 400px;
+    height: 300px;
     display: flex;
     width: 875px;
     flex-direction: column;
     justify-content: flex-end;
+    margin: 0 auto;
+}
+
+.value-one-arc, .value-two-arc{
+    position: absolute;
+}
+.value-one-arc{
+/*    Изменение динамически*/
+    bottom:200px;
+    left:200px;
+}
+.value-two-arc{
+    /*    Изменение динамически*/
+    bottom:200px;
+    left:200px;
 }
 
 .line-box {
     width: 875px;
     margin: 0 auto;
-    
-    position: relative;
 }
 
 .line {
@@ -58,11 +88,12 @@ h2 {
     border-left: 1px solid var(--arc-color);
     border-right: 1px solid var(--arc-color);
     z-index: 10;
+    position: absolute;
     
 }
 .arc-one{
-    --arc-width:calc(var(--one-pt)*7);
-    position: absolute;
+    --arc-width:calc(var(--one-pt)*10);
+    
     bottom: 67px;
     left:35px;
     width: var(--arc-width);
