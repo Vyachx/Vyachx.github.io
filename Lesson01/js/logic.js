@@ -17,13 +17,6 @@ $(document).ready(function () {
     arcTwo.style.setProperty('--sum', valueTwo);
 
 
-
-    var fieldTwo = $('.value-two');
-    var fieldAnswer = $('.value-answer');
-
-
-
-
     $('.value-one-arc').focusout(function () {
         var valueOneArc = $('.value-one-arc').val();
         var fieldOne = $('.value-one');

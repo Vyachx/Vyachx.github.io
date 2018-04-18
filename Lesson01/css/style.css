@@ -119,10 +119,12 @@ input[type=number]::-webkit-outer-spin-button {
 
 .arc-two {
     --sum: 1;
+    
     --arc-width: calc(var(--one-pt)*var(--sum));
 
+    --left-padding:35px;
     bottom: 67px;
-    left: 35px;
+    left: calc(var(--left-padding));
     width: var(--arc-width);
     height: calc(var(--arc-width)/2);
 }
