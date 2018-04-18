@@ -91,7 +91,8 @@ input[type='number'] {
     background: none;
     font-weight: none;
     color: black;
-    -webkit-text-fill-color: black;
+    -webkit-text-fill-color: rgba(0, 0, 0, 1) !important;
+    -webkit-opacity: 1 !important;
 }
 
 .value-one-arc {
@@ -142,12 +143,13 @@ input[type='number'] {
     left: 35px;
     width: var(--arc-width);
     height: calc(var(--arc-width)/2);
-   
+
 }
-.arc-one::before{
+
+.arc-one::before {
     content: '';
     display: block;
-background: var(--arc-color);
+    background: var(--arc-color);
     width: 15px;
     height: 1px;
     position: absolute;
@@ -155,10 +157,11 @@ background: var(--arc-color);
     bottom: 6px;
     transform: rotate(50deg);
 }
-.arc-one::after{
+
+.arc-one::after {
     content: '';
     display: block;
-background: var(--arc-color);
+    background: var(--arc-color);
     width: 15px;
     height: 1px;
     position: absolute;
@@ -176,10 +179,11 @@ background: var(--arc-color);
     width: var(--arc-width);
     height: calc(var(--arc-width)/2);
 }
-.arc-two::before{
+
+.arc-two::before {
     content: '';
     display: block;
-background: var(--arc-color);
+    background: var(--arc-color);
     width: 15px;
     height: 1px;
     position: absolute;
@@ -187,10 +191,11 @@ background: var(--arc-color);
     bottom: 6px;
     transform: rotate(50deg);
 }
-.arc-two::after{
+
+.arc-two::after {
     content: '';
     display: block;
-background: var(--arc-color);
+    background: var(--arc-color);
     width: 15px;
     height: 1px;
     position: absolute;
