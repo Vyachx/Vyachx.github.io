@@ -1,7 +1,7 @@
-:root{
---arc-color: brown;
-/*--arc-width:380px;*/
---one-pt:39px;
+:root {
+    --arc-color: brown;
+    /*--arc-width:380px;*/
+    --one-pt: 39px;
 }
 
 body {
@@ -27,26 +27,36 @@ h2 {
     text-align: center;
 
 }
-.task{
+
+.task {
     margin-top: 15px;
 }
 
-.formula{}
-
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+.formula {
+    display: flex;
 }
 
-.input{
+.fields {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input {
     width: 20px;
     margin: 0 5px;
+    text-align: center;
 }
 
-.task-box{
+.task-box {
     position: relative;
-/*    height: var(--arc-width);*/
+    /*    height: var(--arc-width);*/
     height: 300px;
     display: flex;
     width: 875px;
@@ -55,18 +65,23 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0 auto;
 }
 
-.value-one-arc, .value-two-arc{
+.value-one-arc,
+.value-two-arc {
     position: absolute;
+    z-index: 20;
 }
-.value-one-arc{
-/*    Изменение динамически*/
-    bottom:200px;
-    left:200px;
-}
-.value-two-arc{
+
+.value-one-arc {
     /*    Изменение динамически*/
-    bottom:200px;
-    left:200px;
+    bottom: 200px;
+    left: 200px;
+}
+
+.value-two-arc {
+    /*    Изменение динамически*/
+    bottom: 200px;
+    left: 300px;
+
 }
 
 .line-box {
@@ -89,13 +104,25 @@ input[type=number]::-webkit-outer-spin-button {
     border-right: 1px solid var(--arc-color);
     z-index: 10;
     position: absolute;
-    
+
 }
-.arc-one{
-    --arc-width:calc(var(--one-pt)*10);
-    
+
+.arc-one {
+    --sum: 1;
+    --arc-width: calc(var(--one-pt)*var(--sum));
+
     bottom: 67px;
-    left:35px;
+    left: 35px;
+    width: var(--arc-width);
+    height: calc(var(--arc-width)/2);
+}
+
+.arc-two {
+    --sum: 1;
+    --arc-width: calc(var(--one-pt)*var(--sum));
+
+    bottom: 67px;
+    left: 35px;
     width: var(--arc-width);
     height: calc(var(--arc-width)/2);
 }
