@@ -125,25 +125,5 @@ $(document).ready(function () {
     var valueTwoArc = document.querySelector('.value-two-arc');
     $(valueTwoArc).css('bottom', leftTwoValH);
 
-    //    //Установка значений выражения  подстановкой из инпутов
-    //    $('.value-one-arc').focusout(function () {
-    //        var valueOneArc = $('.value-one-arc').val();
-    //        var fieldOne = $('.value-one');
-    //        fieldOne.text(valueOneArc);
-    //    });
-    //
-    //    $('.value-two-arc').focusout(function () {
-    //        var valueTwoArc = $('.value-two-arc').val();
-    //        var fieldTwo = $('.value-two');
-    //        fieldTwo.text(valueTwoArc);
-    //        var valueOneArc = $('.value-one-arc').val();
-    //        valueOneArc = Number(valueOneArc);
-    //        valueTwoArc = Number(valueTwoArc);
-    //        var answer = valueOneArc + valueTwoArc;
-    //        $('.value-answer').text(answer);
-    //    });
-
-
-
 
 });
