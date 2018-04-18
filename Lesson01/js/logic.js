@@ -16,9 +16,9 @@ $(document).ready(function () {
     arcTwo.style.setProperty('--sum', valueTwo);
 
     //Отрисовка отступа второй дуги
-    var t = $('.arc-one').width();
+    var width = $('.arc-one').width();
     var arcTwo = document.querySelector('.arc-two');
-    $(arcTwo).css('left', t + 35.2);
+    $(arcTwo).css('left', width + 35.2);
 
     //Заполнение выражения сгенерированными значениями
     $('.value-one').text(valueOne);
@@ -80,6 +80,33 @@ $(document).ready(function () {
     });
 
     //Позиционирование инпутов
+    //Позиционирование по Х one
+    var widthOne = $('.arc-one').width();
+    widthOne = Number(widthOne);
+    var leftOneValW = widthOne / 2;
+    var valueOneArc = document.querySelector('.value-one-arc');
+    $(valueOneArc).css('left', leftOneValW + 22);
+    //Позиционирование по У one
+    var height = $('.arc-one').height();
+    height = Number(height);
+    var leftOneValH = height + 80;
+    var valueOneArc = document.querySelector('.value-one-arc');
+    $(valueOneArc).css('bottom', leftOneValH);
+    //Позиционирование по Х two
+    var widthTwo = $('.arc-two').width();
+    widthTwo = Number(widthTwo);
+    console.log('ширина второй дуги'+width);
+    var leftTwoValW = widthTwo/2 ;
+    leftTwoValW = widthOne + leftTwoValW;
+    console.log('ширина первой плюс второй дуги'+leftTwoValW);
+    var valueTwoArc = document.querySelector('.value-two-arc');
+    $(valueTwoArc).css('left', leftTwoValW + 20);
+    //Позиционирование по У two
+    var height = $('.arc-two').height();
+    height = Number(height);
+    var leftTwoValH = height + 80;
+    var valueTwoArc = document.querySelector('.value-two-arc');
+    $(valueTwoArc).css('bottom', leftTwoValH);
 
     //    //Установка значений выражения  подстановкой из инпутов
     //    $('.value-one-arc').focusout(function () {
