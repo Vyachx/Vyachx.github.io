@@ -82,6 +82,11 @@ input[type=number]::-webkit-outer-spin-button {
     z-index: 20;
 }
 
+:disabled{
+    background: none;
+    font-weight: none;
+    color: black;
+}
 .value-one-arc {
     /*    Изменение динамически*/
     bottom: 200px;
@@ -92,6 +97,7 @@ input[type=number]::-webkit-outer-spin-button {
     /*    Изменение динамически*/
     bottom: 200px;
     left: 300px;
+    visibility: hidden;
 }
 
 .line-box {
@@ -128,7 +134,7 @@ input[type=number]::-webkit-outer-spin-button {
     --arc-width: calc(var(--one-pt)*var(--sum));
     --left-padding: 35px;
     bottom: 67px;
-
+    visibility: hidden;
     width: var(--arc-width);
     height: calc(var(--arc-width)/2);
 }

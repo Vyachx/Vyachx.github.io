@@ -29,14 +29,57 @@ $(document).ready(function () {
         var valueOneArc = $('.value-one-arc').val();
         if (valueOneArc == valueOne) {
             $('.value-one').css('background', 'none');
-
-
-
+            $('.value-one-arc').css({
+                'color': 'black',
+                'font-weight': 'none',
+                'border': 'none',
+            });
+            $('.value-two-arc').css({
+                'visibility': 'visible'
+            });
+            $('.arc-two').css({
+                'visibility': 'visible'
+            });
+            $('.value-one-arc').prop('disabled', true);
         } else {
             $('.value-one').css('background', '#F9A646');
-            $('.value-one-arc').css({'color': '#C1384D', 'font-weight':'bold'});
+            $('.value-one-arc').css({
+                'color': '#C1384D',
+                'font-weight': 'bold'
+            });
         }
     });
+    $('.value-two-arc').focusout(function () {
+        var valueTwoArc = $('.value-two-arc').val();
+        if (valueTwoArc == valueTwo) {
+            $('.value-two').css('background', 'none');
+            $('.value-two-arc').css({
+                'color': 'black',
+                'font-weight': 'none'
+            });
+            $('.value-two-arc').css({
+                'color': 'black',
+                'font-weight': 'none',
+                'border': 'none'
+            });
+            $('.value-two-arc').prop('disabled', true);
+            var valueTwoArc = $('.value-two-arc').val();
+            var fieldTwo = $('.value-two');
+            var valueOneArc = $('.value-one-arc').val();
+            valueOneArc = Number(valueOneArc);
+            valueTwoArc = Number(valueTwoArc);
+            var answer = valueOneArc + valueTwoArc;
+            $('.value-answer').text(answer);
+        } else {
+            $('.value-two').css('background', '#F9A646');
+            $('.value-two-arc').css({
+                'color': '#C1384D',
+                'font-weight': 'bold'
+            });
+        }
+    });
+
+    //Позиционирование инпутов
 
     //    //Установка значений выражения  подстановкой из инпутов
     //    $('.value-one-arc').focusout(function () {
