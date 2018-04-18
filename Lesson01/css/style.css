@@ -56,6 +56,7 @@ input[type=number]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
 input[type='number'] {
     -moz-appearance: textfield;
 }
@@ -114,13 +115,13 @@ input[type='number'] {
 }
 
 .line-box {
-    width: 875px;
+    /*    width: 875px;*/
     margin: 0 auto;
     border-radius: 5px;
 }
 
 .line {
-    width: 875px;
+    max-width: 875px;
     height: 83px;
     margin: 0 auto;
 }
@@ -141,6 +142,29 @@ input[type='number'] {
     left: 35px;
     width: var(--arc-width);
     height: calc(var(--arc-width)/2);
+   
+}
+.arc-one::before{
+    content: '';
+    display: block;
+background: var(--arc-color);
+    width: 15px;
+    height: 1px;
+    position: absolute;
+    right: -3px;
+    bottom: 6px;
+    transform: rotate(50deg);
+}
+.arc-one::after{
+    content: '';
+    display: block;
+background: var(--arc-color);
+    width: 15px;
+    height: 1px;
+    position: absolute;
+    right: -11px;
+    bottom: 7px;
+    transform: rotate(-70deg);
 }
 
 .arc-two {
@@ -151,4 +175,26 @@ input[type='number'] {
     visibility: hidden;
     width: var(--arc-width);
     height: calc(var(--arc-width)/2);
+}
+.arc-two::before{
+    content: '';
+    display: block;
+background: var(--arc-color);
+    width: 15px;
+    height: 1px;
+    position: absolute;
+    right: -3px;
+    bottom: 6px;
+    transform: rotate(50deg);
+}
+.arc-two::after{
+    content: '';
+    display: block;
+background: var(--arc-color);
+    width: 15px;
+    height: 1px;
+    position: absolute;
+    right: -11px;
+    bottom: 7px;
+    transform: rotate(-70deg);
 }
