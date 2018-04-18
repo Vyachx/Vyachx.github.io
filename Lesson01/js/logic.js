@@ -40,6 +40,7 @@ $(document).ready(function () {
             $('.arc-two').css({
                 'visibility': 'visible'
             });
+            $('.value-one-arc').prop('disabled', true);
         } else {
             $('.value-one').css('background', '#F9A646');
             $('.value-one-arc').css({
@@ -85,7 +86,7 @@ $(document).ready(function () {
             $('.value-answer').css({
                 'color': 'black',
                 'font-weight': 'bold',
-                 'font-size': '25px',
+                'font-size': '25px',
                 'border': '1px solid #fff'
             });
             $('.value-answer').prop('disabled', true);
