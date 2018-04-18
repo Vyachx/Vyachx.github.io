@@ -40,7 +40,6 @@ $(document).ready(function () {
             $('.arc-two').css({
                 'visibility': 'visible'
             });
-            $('.value-one-arc').prop('disabled', true);
         } else {
             $('.value-one').css('background', '#F9A646');
             $('.value-one-arc').css({
@@ -63,19 +62,38 @@ $(document).ready(function () {
                 'border': 'none'
             });
             $('.value-two-arc').prop('disabled', true);
-            var valueTwoArc = $('.value-two-arc').val();
-            var fieldTwo = $('.value-two');
-            var valueOneArc = $('.value-one-arc').val();
-            valueOneArc = Number(valueOneArc);
-            valueTwoArc = Number(valueTwoArc);
-            var answer = valueOneArc + valueTwoArc;
-            $('.value-answer').text(answer);
+            $('.value-answer').prop('disabled', false);
+            $('.value-answer').css({
+                'border': '1px solid #ADADAD'
+            });
         } else {
             $('.value-two').css('background', '#F9A646');
             $('.value-two-arc').css({
                 'color': '#C1384D',
                 'font-weight': 'bold'
             });
+        }
+    });
+    $('.value-answer').focusout(function () {
+        var valueAnswer = $('.value-answer').val();
+        var valueTwoArc = $('.value-two-arc').val();
+        var valueOneArc = $('.value-one-arc').val();
+        valueTwoArc = Number(valueTwoArc);
+        valueOneArc = Number(valueOneArc);
+        var sum = valueTwoArc + valueOneArc;
+        if (valueAnswer == sum) {
+            $('.value-answer').css({
+                'color': 'black',
+                'font-weight': 'bold',
+                 'font-size': '25px',
+                'border': '1px solid #fff'
+            });
+            $('.value-answer').prop('disabled', true);
+        } else {
+            $('.value-answer').css({
+                'color': '#F0182B'
+            });
+
         }
     });
 
@@ -95,10 +113,8 @@ $(document).ready(function () {
     //Позиционирование по Х two
     var widthTwo = $('.arc-two').width();
     widthTwo = Number(widthTwo);
-    console.log('ширина второй дуги'+width);
-    var leftTwoValW = widthTwo/2 ;
+    var leftTwoValW = widthTwo / 2;
     leftTwoValW = widthOne + leftTwoValW;
-    console.log('ширина первой плюс второй дуги'+leftTwoValW);
     var valueTwoArc = document.querySelector('.value-two-arc');
     $(valueTwoArc).css('left', leftTwoValW + 20);
     //Позиционирование по У two

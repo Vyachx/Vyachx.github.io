@@ -80,6 +80,7 @@ input[type=number]::-webkit-outer-spin-button {
 .value-two-arc {
     position: absolute;
     z-index: 20;
+    padding-top: 1px;
 }
 
 :disabled {
@@ -103,10 +104,10 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .value-answer {
-    border: none;
     width: 50px;
     border: 1px solid #fff;
     margin-left: 2px;
+
 }
 
 .line-box {
