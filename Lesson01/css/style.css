@@ -93,6 +93,9 @@ input[type='number'] {
     color: black;
     -webkit-text-fill-color: rgba(0, 0, 0, 1) !important;
     -webkit-opacity: 1 !important;
+    color: black !important;
+    background: none !important;
+    opacity: 1 !important;
 }
 
 .value-one-arc {
