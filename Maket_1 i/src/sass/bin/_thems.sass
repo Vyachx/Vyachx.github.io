@@ -1,0 +1,56 @@
+.title-section
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    justify-content: space-between
+    +rfs(28px)
+    letter-spacing: -0.6px
+    font-weight: 800
+    text-transform: uppercase
+    text-align: center
+    align-items: center
+    color: #0eb493
+    font-weight: 800
+    flex-direction: column
+    margin-bottom: 50px
+    span
+        margin-top: 10px
+        position: relative
+        &:after,
+        &:before
+            position: absolute
+            display: inline-block
+            content: ''
+            width: 90px
+            height: 1px
+            background: #062033
+            opacity: 0.2
+            top: 50%
+            transition: translatey(-50%)
+        &:before
+            right: 150%
+        &:after
+            left: 150%
+        img
+            display: block
+
+.subtitle-section
+    opacity: 0.8
+    +rfs(18px)
+    font-weight: 600
+    text-align: center
+    color: rgba(6,32,51,0.8)
+    display: block
+    line-height: 1.33
+    margin-left: auto
+    margin-right: auto
+    width: 80%
+    margin-bottom: 50px
+        
+    
+.w100
+    width: 100%
+.w50
+    width: 48%
