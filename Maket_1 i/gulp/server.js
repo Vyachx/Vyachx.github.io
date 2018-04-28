@@ -7,6 +7,7 @@ gulp.task('server', function() {
         server: {
             baseDir: "dist/"
         },
-        files:['dist/**/*.*']
+        files:['dist/**/*.*'],
+        reloadDelay: 500 
     });
 });

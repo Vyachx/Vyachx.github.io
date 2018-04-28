@@ -16,21 +16,29 @@
             <div class="header-body__logo">
                 <a href="" class="logo"></a>
                 <img src="img/logo.png" alt="">
-                </div>
-                <div class="header-body__search"><input type="text" class="search" placeholder='I`am your tag line'></div>
-                <nav class="header-body__nav">
-                    <ul class="header-nav">
-                        <li class="header-nav__item"><a href="#">Home</a></li>
-                        <li class="header-nav__item"><a href="#">Features</a></li>
-                        <li class="header-nav__item"><a href="#">Works</a></li>
-                        <li class="header-nav__item"><a href="#">Team</a></li>
-                        <li class="header-nav__item"><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
+            </div>
+            <div class="header-body__search"><input type="text" class="search" placeholder='I`am your tag line'></div>
+            <div class="header-body__burger header-burger">
+                <span class="header-burger__line"></span>
+                <span class="header-burger__line"></span>
+                <span class="header-burger__line"></span>
+            </div>
+            <nav class="header-body__nav">
+                <ul class="header-nav">
+                    <li class="header-nav__item"><a href="#">Home</a></li>
+                    <li class="header-nav__item"><a href="#">Features</a></li>
+                    <li class="header-nav__item"><a href="#">Works</a></li>
+                    <li class="header-nav__item"><a href="#">Team</a></li>
+                    <li class="header-nav__item"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
 </header>
 
+ <div class="mask">
+     
+ </div>
 
 <main class="home">
 
@@ -49,7 +57,7 @@
                     <li class="intro-social__item"><a href="#"><img src="img/slider-soc--4.png" alt=""></a></li>
                 </ul>
             </section>
-            <!--
+            
             <section class="intro-list__item intro-item">
                 <img src="img/bg-main.jpg" alt="" class="intro-item__bg">
                 <h2 class="intro-item__title">Meet <span>Brandi!</span></h2>
@@ -74,13 +82,6 @@
                     <li class="intro-social__item"><a href="#"><img src="img/slider-soc--4.png" alt=""></a></li>
                 </ul>
             </section>
--->
-            <ol class="flickity-page-dots">
-                <li class="dot"></li>
-                <li class="dot"></li>
-                <li class="dot"></li>
-            </ol>
-
         </div>
     </div>
     <!--    features-->
@@ -110,11 +111,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quos alias unde minus vero architecto vitae laboriosam repellat id ut.
                         </p>
                     </section>
-                    <ol class="flickity-page-dots">
-                        <li class="dot"></li>
-                        <li class="dot"></li>
-                        <li class="dot"></li>
-                    </ol>
+
                 </div>
             </div>
         </div>
@@ -130,16 +127,16 @@
             </div>
             <div class="works-body__gallery works-gallery">
                 <div class="works-gallery__nav works-nav">
-                    <button class="works-nav__button active" type='button'>All</button>
-                    <button class="works-nav__button" type='button'>Branding</button>
-                    <button class="works-nav__button" type='button'>Web</button>
-                    <button class="works-nav__button" type='button'>Logo Design</button>
-                    <button class="works-nav__button" type='button'>Photography</button>
+                    <button class="works-nav__button active" type='button' data-filter='*'>All</button>
+                    <button class="works-nav__button" type='button' data-filter='.brand'>Branding</button>
+                    <button class="works-nav__button" type='button' data-filter='.web'>Web</button>
+                    <button class="works-nav__button" type='button' data-filter='.logo'>Logo Design</button>
+                    <button class="works-nav__button" type='button' data-filter='.photo'>Photography</button>
                 </div>
                 <div class="works-gallery__grid works-grids">
                     <section class="works-grids__item works-grid">
                         <img src="img/works/works-1.jpg" alt="" class="works-grid__img">
-                        <div class="works-grid__hover works-hover">
+                        <div class="works-grid__hover works-hover brand">
                             <img src="img/hover-eye.png" alt="" class="works-hover__logo">
                             <h4 class="works-hover__title">Lorem ipsum dolor sit amet.</h4>
                             <div class="works-hover__text">Lorem ipsum.</div>
@@ -147,13 +144,13 @@
                     </section>
                     <section class="works-grids__item works-grid">
                         <img src="img/works/works-2.jpg" alt="" class="works-grid__img">
-                        <div class="works-grid__hover works-hover">
+                        <div class="works-grid__hover works-hover web">
                             <img src="img/hover-eye.png" alt="" class="works-hover__logo">
                             <h4 class="works-hover__title">Lorem ipsum dolor sit amet.</h4>
                             <div class="works-hover__text">Lorem ipsum.</div>
                         </div>
                     </section>
-                    <section class="works-grids__item works-grid">
+                    <section class="works-grids__item works-grid web">
                         <img src="img/works/works-3.jpg" alt="" class="works-grid__img">
                         <div class="works-grid__hover works-hover">
                             <img src="img/hover-eye.png" alt="" class="works-hover__logo">
@@ -161,15 +158,15 @@
                             <div class="works-hover__text">Lorem ipsum.</div>
                         </div>
                     </section>
-                    <section class="works-grids__item works-grid">
+                    <section class="works-grids__item works-grid logo">
                         <img src="img/works/works-4.jpg" alt="" class="works-grid__img">
-                        <div class="works-grid__hover works-hover">
+                        <div class="works-grid__hover works-hover brand">
                             <img src="img/hover-eye.png" alt="" class="works-hover__logo">
                             <h4 class="works-hover__title">Lorem ipsum dolor sit amet.</h4>
                             <div class="works-hover__text">Lorem ipsum.</div>
                         </div>
                     </section>
-                    <section class="works-grids__item works-grid">
+                    <section class="works-grids__item works-grid logo photo">
                         <img src="img/works/works-5.jpg" alt="" class="works-grid__img">
                         <div class="works-grid__hover works-hover">
                             <img src="img/hover-eye.png" alt="" class="works-hover__logo">
@@ -177,7 +174,7 @@
                             <div class="works-hover__text">Lorem ipsum.</div>
                         </div>
                     </section>
-                    <section class="works-grids__item works-grid">
+                    <section class="works-grids__item works-grid  brand photo">
                         <img src="img/works/works-6.jpg" alt="" class="works-grid__img">
                         <div class="works-grid__hover works-hover">
                             <img src="img/hover-eye.png" alt="" class="works-hover__logo">
@@ -185,7 +182,7 @@
                             <div class="works-hover__text">Lorem ipsum.</div>
                         </div>
                     </section>
-                    <section class="works-grids__item works-grid">
+                    <section class="works-grids__item works-grid photo">
                         <img src="img/works/works-7.jpg" alt="" class="works-grid__img">
                         <div class="works-grid__hover works-hover">
                             <img src="img/hover-eye.png" alt="" class="works-hover__logo">
@@ -193,7 +190,7 @@
                             <div class="works-hover__text">Lorem ipsum.</div>
                         </div>
                     </section>
-                    <section class="works-grids__item works-grid">
+                    <section class="works-grids__item works-grid web logo photo">
                         <img src="img/works/works-8.jpg" alt="" class="works-grid__img">
                         <div class="works-grid__hover works-hover">
                             <img src="img/hover-eye.png" alt="" class="works-hover__logo">
@@ -279,11 +276,6 @@
                         <h3 class="team-item__name">CrysWow</h3>
                         <p class="team-item_position">Lead Designer</p>
                     </section>
-                    <ol class="flickity-page-dots">
-                        <li class="dot"></li>
-                        <li class="dot"></li>
-                        <li class="dot"></li>
-                    </ol>
                 </div>
             </div>
         </div>
@@ -368,6 +360,7 @@
 <footer class="footer">
     
 </footer>
+<script src="js/libs.js"></script>
 <script src='js/main.js'></script>
 </body>
 
