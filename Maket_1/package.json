@@ -1,5 +1,5 @@
 {
-  "name": "my_first_gulp",
+  "name": "Maket_1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -32,7 +32,7 @@
       "css": "src/css/libs.css"
     }
   },
-  "author": "ya",
+  "author": "Vyachx",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.0",
