@@ -20,4 +20,10 @@ $(document).ready(function () {
         return false;
     });
     
+    $('.top-footer').flickity({
+        cellAling:'left',
+        contain: true,
+        prevNextButtons: false
+    });
+    
 });
