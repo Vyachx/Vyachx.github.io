@@ -9,14 +9,7 @@
     margin-top: 7px
     font-family: 'vida31'
     +rfs(16px)
-    &:after
-        display: block
-        content: ''
-        background-color: rgba(145, 145, 145, 0.2)
-        width: 303px
-        height: 1px
-        margin-left: 30px
-        margin-top: -7px
+    
     &__item
         line-height: 20px
         +rfs(16px)
@@ -32,7 +25,7 @@
             margin-top: -11px
             padding: 9px 0 0 19px
             position: relative
-            &:after
+            &:before
                 display: block
                 content: '6'
                 border-radius: 50%
@@ -46,6 +39,13 @@
                 font-family: 'Vida33'
                 +rfs(12px)
                 text-align: center
+            &:after
+                display: block
+                content: ''
+                background-color: rgba(145, 145, 145, 0.2)
+                width: 303px
+                height: 1px
+                margin-top: 30px
 
             
             
@@ -69,6 +69,7 @@
             width: 303px
             height: 1px
             margin-top: 39px
+            margin-right: 25px;
     &__title
         width: 100%
         margin-top: 37px
@@ -92,4 +93,49 @@
             display: inline-block
             position: absolute
             margin-left: 10px
+            
++r(sm)
+    .sidebar
+        border: none
+        width: 100%
+    .sidebar-menu
+        display: none
+    .sidebar-menu__item_notice
+        width: 94%
+        top: -8px
+        margin: 0 auto
+        display: block
+        position: relative
+        &:after
+            background-image: url(../img/header-lk-arrow.png)
+            background-repeat: no-repeat
+            width: 8px
+            height: 6px
+            top: -14px
+            padding-left: 30px;
+            position: absolute
+            background-color: transparent
+        &:before
+            right: 539px
+            top: -5px
+    .sidebar-adress
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        &__item
+            width: 48%
+            position: relative
+            &:after
+                width: 1px
+                height: 54px
+                margin: 0
+                position: absolute
+                top: 24px
+                left: 100%
+        &__title
+            margin-top: 21px
+            
+ 
             

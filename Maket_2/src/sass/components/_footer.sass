@@ -3,6 +3,7 @@
     
     width: 100%
 .top-footer
+    overflow: hidden
     background-color: rgba(83, 86, 90, 0.1)
     display: -webkit-flex
     display: -moz-flex
@@ -10,8 +11,11 @@
     display: -o-flex
     display: flex
     justify-content: space-between
+    .container
+        padding: 0 60px
+        
     &__item
-        margin: 0 60px
+        
         
         
 .tfooter-item
@@ -118,3 +122,22 @@
     &__text
         color: $bc
         line-height: 24px
+        
++r(sm)
+    .top-footer
+        padding-left: 30px
+        overflow: scroll
+        .container
+            flex-direction: row
+            padding: 0 40px
+    .tfooter-item
+        margin: 30px 30px
+        min-width: 200px
+    .bfooter-info
+        min-width: 300px
+    .bfooter-section
+        flex-wrap: wrap
+        &__item
+            width: 35%
+            margin-bottom: 45px
+        

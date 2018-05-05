@@ -1,2 +1,2 @@
-$(document).ready(function(){$(".content-item__arrow").click(function(){return $(this).parent().toggleClass("content-item_open"),!1})});
+$(document).ready(function(){$(".content-item__arrow").click(function(){return $(this).parent().toggleClass("content-item_open"),!1}),$(".header-burger").click(function(){return $(".wrap-menu").toggleClass("vis"),$(".header-comparison").toggleClass("vis"),$(".header-lk").toggleClass("vis"),$(".header-menu").toggleClass("vis"),$(".header-body__logo").toggleClass("vis"),!1})});
 //# sourceMappingURL=main.js.map
