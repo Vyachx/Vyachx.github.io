@@ -3,11 +3,14 @@
         position: relative
         &__bg
             line-height: 0
+            width: 100%;
+            img
+                width: 100%
             
 .intro-text
     +rfs(48px)
     color: #414141
-    font-family: 'Vida 33' sans-serif
+    font-family: 'Vida33' sans-serif
     position: absolute
     top: 142px
     left: 93px
@@ -23,3 +26,57 @@
         line-height: 53px
         background: #fff
         padding: 10px 32px 0 18px
+        
+        
+        
+.container
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    margin-top: 64px
+    margin-bottom: 80px
+    
+    
+.content
+    margin-left: 40px
+    &-body
+        &__title
+            +rfs(35px)
+            color: #414141;
+            font-family: 'Vida33'
+            margin-top: -5px
+            margin-bottom: 41px
+        &__item
+            
+.content-item
+    position: relative
+    margin-bottom: 24px
+    border-radius: 8px
+    border: 1px solid #edeeee
+    padding: 24px
+    &__date
+        padding: 5px
+        background: #000
+        margin-bottom: 24px
+        background-color: #edeeee
+        border-radius: 2px
+        width: 77px
+    &__title
+        width: 90%
+        margin-bottom: 18px
+    &__text
+        width: 90%
+    &__arrow
+        position: absolute
+        top: 50%
+        right: 32px
+        background-image: url(../img/arrow-article.png)
+        width: 24px
+        height: 24px
+    &_open
+        background-color: #fcfcfc
+        .content-item__arrow
+            background-image: url(../img/arrow-article_open.png)
+            
