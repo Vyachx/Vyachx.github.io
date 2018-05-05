@@ -1,0 +1,116 @@
+.header-body
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    margin-top: 16px    
+    margin-bottom: 12px
+    &__logo
+        margin-top: 8px 
+        margin-left: 40px
+    &__menu
+    &__comparison
+    &__lk
+    &__contact
+        
+
+.header-menu
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    margin-left: 37px
+    margin-top: 22px
+    flex-grow: 1
+    justify-content: flex-start
+    &__item
+        line-height: 20px
+        +rfs(15px)
+        color: $bc
+        margin-right: 23px
+        font-size: 15px
+        margin-left: 1px
+        font-weight: 400
+        
+
+        
+.header-comparison
+    margin-left: auto
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    margin-top: 23px
+    margin-right: 25px
+    &__icon
+        margin-right: 11px
+
+        position: relative
+        &:after
+            display: block
+            content: '3'
+            border-radius: 50%
+            color: #fff
+            background: $bc
+            position: absolute
+            width: 16px
+            height: 16px
+            text-align: center
+            +rfs(12px)
+            padding-top: 2px
+            font-weight: 400
+            font-family: 'Vida31'
+            top: -10px
+            right: -6px
+    &__title
+        color: $bc
+        +rfs(14px)
+    
+
+.header-lk
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    width: 149px
+    height: 27px
+    margin-right: 23px
+    border-radius: 14px
+    border: 1px solid rgba(83, 86, 90, 0.2)
+    margin-top: 18px
+    justify-content: center
+    background: none
+    +rfs(14px)
+    text-align: center
+    color: #53565a
+    padding: 0
+    line-height: 20px
+    &__text
+    &__btn
+        margin: 7px 4px 0 13px
+        img
+
+        
+.header-contact
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    align-items: center
+    margin-right: 51px
+    &__phone
+        margin-right: 8px
+        a
+            color: #565f66
+            font-family: 'Vida 33'
+            +rfs(18px)
+            font-weight: 400
+            line-height: 20px
+            text-decoration: none
+            
+    &__icon
