@@ -77,27 +77,44 @@
     display: -ms-flex
     display: -o-flex
     display: flex
-    margin: 0 45px
+    margin: 44px 45px
    
-    .bfooter-info
-        width: 200px
-        &__socials
-        &__phone
-        &__adress
-        &__email
-    &__section
-        display: -webkit-flex
-        display: -moz-flex
-        display: -ms-flex
-        display: -o-flex
-        display: flex
-        justify-content: space-around
-        width: 100%
-       
-        &__item
-             &:last-child
-                .bfooter-item__title
-                    visibility: hidden
-        &__title
-            
-        &__text
+.bfooter-info
+    width: 200px
+    &__socials
+        margin-bottom: 21px
+    &__phone
+    &__adress
+        color: #424242
+        +rfs(14px)
+        margin-top: 12px
+
+    &__email
+        a
+            color: $bc
+            +rfs(14px)
+            font-family: 'Vida31'
+            text-decoration: none
+        
+        
+.bottom-footer__section
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    justify-content: space-around
+    width: 100%
+
+.bfooter-section__item
+     &:last-child
+        .bfooter-item__title
+            visibility: hidden
+.bfooter-item 
+    +rfs(14px)
+    &__title
+        font-family: 'Vida33'
+        margin-bottom: 15px
+    &__text
+        color: $bc
+        line-height: 24px
