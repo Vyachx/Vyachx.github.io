@@ -1,2 +1,2 @@
-function ready(){document.getElementsByClassName("content-item__arrow").addEventListener("click",function(){document.getElementsByClassName("content-body__item").classList.toggle("content-item_open")})}document.addEventListener("DOMContentLoaded",ready);
+$(document).ready(function(){$(".content-item__arrow").click(function(){return $(this).parent().toggleClass("content-item_open"),!1})});
 //# sourceMappingURL=main.js.map
