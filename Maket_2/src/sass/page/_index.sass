@@ -68,6 +68,7 @@
         margin-bottom: 18px
     &__text
         width: 90%
+        display: none
     &__arrow
         position: absolute
         top: 50%
@@ -77,6 +78,8 @@
         height: 24px
     &_open
         background-color: #fcfcfc
+        .content-item__text
+            display: block
         .content-item__arrow
             background-image: url(../img/arrow-article_open.png)
             

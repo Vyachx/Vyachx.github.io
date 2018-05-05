@@ -1,26 +1,7 @@
-//=require components/**.*
-
-$(window).ready(function () {
-	menuShow();
-
-	$('.intro-list').flickity({
-	  cellAlign: 'left',
-	  contain: true,
-	  prevNextButtons: false
-	});
-
-	$('.features-items').flickity({
-	  cellAlign: 'left',
-	  contain: true,
-	  prevNextButtons: false
-	});
-
-	$('.team-people').flickity({
-	  cellAlign: 'left',
-	  contain: true,
-	  prevNextButtons: false
-	});
-
-	filter();
-
-})
+function ready() {
+    function classToggle() {
+        document.getElementsByClassName('content-body__item').classList.toggle('content-item_open');
+    }
+    document.getElementsByClassName('content-item__arrow').addEventListener('click', classToggle);
+}
+document.addEventListener("DOMContentLoaded", ready);
