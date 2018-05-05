@@ -89,6 +89,14 @@
             background-image: url(../img/arrow-article_open.png)
             top: 60px
             
+.wrap-menu
+    background: #fff
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    display: none
+
             
 +r(sm)
     .intro-text
@@ -137,13 +145,11 @@
             top: 45px
     .vis
         z-index: 11
-        overflow: visible
+        display: flex
+        
++r(xs)
+    .intro-text
+        display: none     
 
-    .wrap-menu
-        background: #fff
-        width: 100%
-        height: 100%
-        position: absolute
-        top: 0
-        overflow: hidden
+   
         

@@ -10,7 +10,14 @@ $(document).ready(function () {
         $('.header-lk').toggleClass('vis');
         $('.header-menu').toggleClass('vis');
         $('.header-body__logo').toggleClass('vis');
-        
+        $('.header-contact').toggleClass('vis');
+        $('.header-contact').toggleClass('pos');
         return false;
     });
+    
+     $('.bfooter-section__item').click(function () {
+        $(this).children().toggleClass('bfooter-item__text_open');
+        return false;
+    });
+    
 });
