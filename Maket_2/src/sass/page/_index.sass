@@ -11,7 +11,7 @@
 .intro-text
     +rfs(48px)
     color: #414141
-    font-family: 'Vida33' sans-serif
+    font-family: 'Vida33'
     position: absolute
     bottom: -1px
     left: 93px
@@ -43,15 +43,16 @@
 
         
 .content
-    margin-left: 40px
+    padding-left: 51px
     width: 100%
+    padding-right: 3px
     &-body
         &__title
             font-size: 35px
             color: #414141;
             font-family: 'Vida33'
             margin-top: -5px
-            margin-bottom: 41px
+            margin-bottom: 37px
         &__item
             
 .content-item
@@ -59,25 +60,30 @@
     margin-bottom: 24px
     border-radius: 8px
     border: 1px solid #edeeee
-    padding: 24px
+    padding: 22px 24px 25px 24px
     &__date
-        padding: 5px
+        padding: 4px 0px 2px 4px
         background: #000
-        margin-bottom: 24px
+        margin-bottom: 20px
         background-color: #edeeee
         border-radius: 2px
         width: 77px
     &__title
         width: 90%
-        margin-bottom: 18px
+        margin-bottom: 15px
     &__text
         display: none
         color: #5a5a58
         font-family: 'Vida31'
+        width: 91%
+        font-size: 17px
+        line-height: 24px
+        margin-bottom: 5px
+        padding-top: 12px
     &__arrow
         position: absolute
-        top: 60px
-        right: 32px
+        top: 45px
+        right: 30px
         background-image: url(../img/arrow-article.png)
         width: 24px
         height: 24px
@@ -87,8 +93,12 @@
             display: block
         .content-item__arrow
             background-image: url(../img/arrow-article_open.png)
-            top: 60px
+    &_first
+        padding: 24px 24px 49px 24px
+        >.content-item__arrow
             
+            top: 58px
+    
 .wrap-menu
     background: #fff
     width: 100%
