@@ -47,6 +47,7 @@
     justify-content: center
     align-items: center
     padding-top: 15px
+    padding-bottom: 10px
     &__text
       display: block
       font-size: 30px
@@ -64,6 +65,19 @@
       color: red
       margin: 0 35px
   &-menu
+    border-top: 1px solid #483592
     &__block
+      display: flex
+      justify-content: space-between
+      align-items: center
+      padding: 17px 0
     &__item
+      display: block
       color: $htc
+      transition: .1s
+      box-sizing: border-box
+      border-bottom: solid 0px #fb2714
+      height: 20px
+      &:hover
+        color: rgba( 255, 255, 255, 1 )
+        border-bottom-width: 5px
