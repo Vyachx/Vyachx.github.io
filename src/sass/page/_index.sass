@@ -1,0 +1,155 @@
+.intro
+    &-body
+        position: relative
+        &__bg
+            line-height: 0
+            background-image: url(../img/header-bg.gif)
+            background-position: center
+            overflow: hidden
+            height: 232px
+            
+.intro-text
+    +rfs(48px)
+    color: #414141
+    font-family: 'Vida33' sans-serif
+    position: absolute
+    bottom: -1px
+    left: 93px
+    &__adress
+        line-height: 44px
+        +rfs(18px)
+        color: #777b80
+        background: #fff
+        height: 28px
+        width: 129px
+        padding-left: 18px
+    &__name
+        line-height: 53px
+        background: #fff
+        padding: 10px 32px 0 18px
+
+        
+        
+.container
+    display: -webkit-flex
+    display: -moz-flex
+    display: -ms-flex
+    display: -o-flex
+    display: flex
+    margin-top: 64px
+    margin-bottom: 80px
+
+    
+
+        
+.content
+    margin-left: 40px
+    width: 100%
+    &-body
+        &__title
+            font-size: 35px
+            color: #414141;
+            font-family: 'Vida33'
+            margin-top: -5px
+            margin-bottom: 41px
+        &__item
+            
+.content-item
+    position: relative
+    margin-bottom: 24px
+    border-radius: 8px
+    border: 1px solid #edeeee
+    padding: 24px
+    &__date
+        padding: 5px
+        background: #000
+        margin-bottom: 24px
+        background-color: #edeeee
+        border-radius: 2px
+        width: 77px
+    &__title
+        width: 90%
+        margin-bottom: 18px
+    &__text
+        display: none
+        color: #5a5a58
+        font-family: 'Vida31'
+    &__arrow
+        position: absolute
+        top: 60px
+        right: 32px
+        background-image: url(../img/arrow-article.png)
+        width: 24px
+        height: 24px
+    &_open
+        background-color: #fcfcfc
+        .content-item__text
+            display: block
+        .content-item__arrow
+            background-image: url(../img/arrow-article_open.png)
+            top: 60px
+            
+.wrap-menu
+    background: #fff
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    display: none
+
+            
++r(sm)
+    .intro-text
+        left: 40px
+        &__adress
+            font-size: 18px
+            line-height: 0
+            padding: 14px 0 0 24px
+        &__name
+            font-size: 32px
+            line-height: 0
+            padding: 26px 21px 11px 24px
+    .container
+        flex-direction: column
+        
+    .content
+        margin-left: 24px
+        width: 94%
+        margin-top: 85px
+        font-size: 35px
+        &-body
+            &__title
+                margin-bottom: 36px
+                
+    .content-item
+        margin-bottom: 29px
+        &__date
+            font-size: 16px
+            padding: 3px
+            margin-bottom: 19px
+        &__title
+            font-size: 16px
+            width: 75%
+            line-height: 24px
+            margin-bottom: 0
+        &__arrow
+            top: 45px
+            right: 24px
+        &__text
+            font-family: 'Vida31'
+            padding-top: 7px
+            line-height: 24px
+            font-size: 16px
+        &_open
+        .content-item__arrow
+            top: 45px
+    .vis
+        z-index: 11
+        display: flex
+        
++r(xs)
+    .intro-text
+        display: none     
+
+   
+        

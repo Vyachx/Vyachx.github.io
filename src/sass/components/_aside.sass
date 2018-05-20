@@ -1,0 +1,142 @@
+.sidebar
+    width: 358px
+    flex-shrink: 1
+    border-right: 1px solid rgba(145, 145, 145, 0.1)
+    padding-right: 20px
+    &__body
+        &__menu
+        &__adress
+.sidebar-menu
+    margin-top: 7px
+    font-family: 'vida31'
+    +rfs(16px)
+    position: relative
+    border-bottom: 1px solid #000
+
+    
+    &__item
+        line-height: 20px
+        +rfs(16px)
+        color: $bc
+        margin-bottom: 15px
+        position: relative
+        padding: 10px 20px
+        border: 1px solid rgba(83, 86, 90, 0)
+        transition: all .4s
+        border-radius: 20px
+        &:hover
+            border: 1px solid rgba(83, 86, 90, .2)
+            cursor: pointer
+        span.badge
+            display: block
+            border-radius: 50%
+            background: $bc
+            width: 20px
+            height: 20px
+            top: -6px
+            right: -7px
+            position: absolute
+            color: #fff
+            font-family: 'Vida33'
+            +rfs(12px)
+            text-align: center
+        &.is-active
+            border-radius: 20px
+            border: 1px solid rgba(83, 86, 90, .2)
+            position: relative
+
+            
+
+            
+            
+.sidebar-adress
+   
+    &__item
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        flex-wrap: wrap
+        margin-left: 29px
+        &:last-child
+            &:after
+                display: none
+        &:after
+            display: block
+            content: ''
+            background-color: rgba(145, 145, 145, 0.2)
+            width: 303px
+            height: 1px
+            margin-top: 39px
+            margin-right: 25px;
+    &__title
+        width: 100%
+        margin-top: 37px
+        font-family: 'Vida33'
+        +rfs(24px)
+        color: $bc
+    &__text
+        width: 65%
+        margin-top: 12px
+    &__btn
+        border: none
+        background: none
+        color: $bc
+        width: 78px
+        +rfs(14px)
+        font-family: 'Vida33'
+        position: relative
+        margin-top: 7px
+    
+        img
+            display: inline-block
+            position: absolute
+            margin-left: 10px
+            
++r(sm)
+    .sidebar
+        border: none
+        width: 100%
+    .sidebar-menu
+        display: none
+    .sidebar-menu__item_notice
+        width: 94%
+        top: -8px
+        margin: 0 auto
+        display: block
+        position: relative
+        &:after
+            background-image: url(../img/header-lk-arrow.png)
+            background-repeat: no-repeat
+            width: 8px
+            height: 6px
+            top: -14px
+            padding-left: 30px;
+            position: absolute
+            background-color: transparent
+        &:before
+            right: 539px
+            top: -5px
+    .sidebar-adress
+        display: -webkit-flex
+        display: -moz-flex
+        display: -ms-flex
+        display: -o-flex
+        display: flex
+        &__item
+            width: 48%
+            position: relative
+            &:after
+                width: 1px
+                height: 54px
+                margin: 0
+                position: absolute
+                top: 24px
+                left: 100%
+        &__title
+            margin-top: 21px
+            
+ 
+            
+
