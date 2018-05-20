@@ -26,6 +26,9 @@
           color: $htc
           font-size: 14px
           margin-right: 4px
+          transition: .3s
+          &:hover
+            color: hsla(0,0%,100%,1)
     &__spec-ver
       margin-right: 75px
       a
@@ -38,17 +41,26 @@
           color: $htc
           font-size: 13px
           letter-spacing: .3px
+          transition: .3s
+          &:hover
+            color: hsla(0,0%,100%,1)
 
     &__search
       cursor: pointer
       margin-right: 39px
       img
         padding-top: 5px
+        transition: .3s
+        &:hover
+          color: hsla(0,0%,100%,1)
     &__lang
 
       .lang__text
-          color: $htc
-          font-size: 14px
+        color: $htc
+        font-size: 14px
+        cursor: pointer
+        &:hover
+          color: hsla(0,0%,100%,1)
   &-main
     display: flex
     justify-content: center
@@ -67,7 +79,6 @@
       display: block
       width: 66px
       height: 77px
-      color: red
       margin: 1px 35px 0
   &-menu
     border-top: 1px solid #696771
