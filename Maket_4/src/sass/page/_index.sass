@@ -1,0 +1,200 @@
+.main
+  .wrapper
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+.main-top
+  padding-top: 47px
+  width: 100%
+
+.bread-nav
+  display: flex
+  &__item
+    color: #3b4256
+    font-size: 13px
+    position: relative
+    margin-right: 33px
+    letter-spacing: .6px
+    border-bottom: 1px solid rgba(251, 39, 20, 0.41)
+    &:last-child
+      margin-right: 0
+      border-bottom: none
+      &:before
+        display: none
+    &:before
+      display: block
+      width: 3px
+      height: 3px
+      background: #fb2714
+      position: absolute
+      top: 50%
+      content: ''
+      right: -18px
+    &_active
+      color: #97a4b1
+
+.main_title
+  padding-top: 30px
+  font-size: 47px
+  letter-spacing: 2px
+  padding-bottom: 28px
+
+.content
+  max-width: 675px
+  padding: 0 5px
+  line-height: 30px
+  word-spacing: 4px
+
+.text-link
+  color: #007fff
+  line-height: 30px
+  border-bottom: 1px solid rgba(0, 127, 255, 0.2)
+
+.career
+  &__item
+    font-size: 16px
+    color: #3b4256
+    margin-bottom: 17px
+
+.partner
+  padding-top: 14px
+  &__desc
+    padding-bottom: 45px
+
+.section__title
+  font-size: 24px
+  letter-spacing: 1.7px
+  padding-bottom: 19px
+
+.partner__item
+  display: flex
+  flex-wrap: wrap
+  padding-bottom: 44px
+  border-bottom: 1px solid #e6ecf2
+  margin-bottom: 50px
+  &:last-child
+    margin-bottom: 25px
+// start  partner__item
+.item
+  &__logo-box
+    display: flex
+    align-items: center
+    background-color: #f9fafc
+    border-radius: 3px
+    width: 255px
+    height: 80px
+    justify-content: center
+  &__site-box
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-wrap: wrap
+    padding: 20px 96px
+  &__logo
+    height: 27px
+  &__desc
+    padding-top: 25px
+    font-size: 15px
+    line-height: 25px
+    color: #3b4256
+  &__desc-title
+    letter-spacing: 1.3px
+    text-transform: uppercase
+  &__desc-line
+    color: #fb2714
+
+.site
+  &__desc
+    color: #97a4b1
+    font-size: 13px
+    line-height: 13px
+    width: 100%
+  &__link
+    color: #007fff
+    font-size: 15px
+    width: 100%
+    line-height: 16px
+    text-decoration: underline
+
+// End  partner__item
+
+.graduates
+  margin-bottom: 125px
+  &__title
+    font-size: 24px
+    word-spacing: 1px
+    letter-spacing: 1.5px
+  &__wrap
+    border-radius: 3px
+    background-color: #f9fafc
+    margin-top: 34px
+    padding: 40px 40px
+  &__item
+    padding-bottom: 38px
+    border-bottom: 1px solid #e6ecf2
+    margin-bottom: 50px
+    &:last-child
+      border: none
+      padding: 0
+      margin-bottom: 14px
+  &__text
+    padding-top: 18px
+    word-spacing: 2px
+    letter-spacing: .3px
+    position: relative
+    z-index: 20
+    &:before
+      display: block
+      position: absolute
+      content: ''
+      background:  url("../img/quotes.svg")
+      width: 49px
+      height: 33px
+      top: -3px
+      left: 4px
+      z-index: -1
+
+.grad-item
+  display: flex
+  flex-wrap: wrap
+  &__img
+    width: 110px
+    height: 110px
+    margin-bottom: 28px
+  &__desc
+    width: 70%
+    margin-left: 40px
+    padding: 10px 0
+  &__title
+    color: #97a4b1
+    letter-spacing: 2px
+    word-spacing: -1px
+  &__text
+    font-size: 13px
+    line-height: 21px
+    padding-top: 4px
+    word-spacing: 1px
+    letter-spacing: .4px
+
+.text-link-grad
+  color: #007fff
+  text-decoration: underline
+.main
+  position: relative
+
+.slipeup
+  position: absolute
+  cursor: pointer
+  bottom: 0
+  right: 0
+  width: 88px
+  height: 892px
+  background-color: rgba(59, 66, 86, 0.06)
+  display: flex
+  justify-content: center
+  align-items: center
+  &__img
+    margin-top: 110px
+    width: 20px
+    height: 36px
+    opacity: 1
